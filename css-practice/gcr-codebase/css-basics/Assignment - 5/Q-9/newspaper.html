@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newspaper Layout</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(255, 255, 255);
+            font-family: Arial;
+        }
+        .newspaper {
+            background-color: rgb(184, 179, 179);
+            padding: 30px;
+            margin: 30px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+
+            column-span: all;
+        }
+        .article {
+            column-count: 3;
+            column-gap: 30px;
+            text-align: justify;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+        .article img {
+            width: 150px;
+            height: 100px;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 10px;
+        }
+        .article p {
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 800px) {
+            .article {
+                column-count: 2;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .article {
+                column-count: 1;
+            }
+            .newspaper {
+                margin: 10px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <h1>Lorem News</h1>
+        <div class="article">
+            <p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG5edRaFIGD7m26kRkvnEDYOeZyjsgxtRCdVfI--8_Aw&s=10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aspernatur hic, quos itaque nisi iusto corporis, modi voluptas aut sint impedit voluptatibus quis. Ex, nobis repellat. Necessitatibus, ut aperiam commodi rem, neque nisi tempore quod provident praesentium officiis doloribus dolor.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptatem recusandae. Nostrum alias perspiciatis doloribus, quis porro dolore voluptatem, repudiandae, earum suscipit at soluta pariatur quas nisi aut eum hic fugiat! Qui sit numquam quasi vitae commodi vel, dicta quisquam sint esse aspernatur incidunt? Minima fugiat eum voluptatum ex! Laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia libero porro dolores a deleniti dolorum expedita tenetur repellat sed veritatis velit nobis quod iste voluptatem, doloremque quos aliquid ullam delectus autem! Pariatur, voluptate modi? Iusto sed odit veritatis in cupiditate.
+            </p>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque placeat neque in totam doloribus consequuntur! Nemo culpa libero molestiae id et, eum excepturi. Necessitatibus est voluptatibus quisquam culpa asperiores aliquid iure ex nesciunt voluptate quo?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at blanditiis consectetur labore suscipit magnam adipisci quisquam, sunt deserunt repellendus ducimus quaerat ratione culpa! Incidunt molestias necessitatibus deserunt sapiente expedita adipisci accusantium deleniti qui cupiditate!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias porro architecto expedita iusto non molestiae, ut, voluptatem corporis temporibus sequi beatae, deserunt pariatur a excepturi ipsum voluptatum id atque? Obcaecati nobis neque corporis natus, amet corrupti iusto laborum quod a, error quae. Deserunt inventore distinctio excepturi amet nulla, libero blanditiis odio itaque maxime. Corrupti cupiditate delectus quos sit provident.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            text-align: center;
+            font-size: 35px;
+            margin: 30px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px;
+        }
+        .photo {
+            width: 30%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgb(53, 53, 53);
+        }
+        .photo img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+        }
+        .photo:hover img {
+            transform: scale(1.1);
+        }
+        .photo:hover .caption {
+            opacity: 1;
+        }
+        @media screen and (max-width: 800px) {
+            .photo {
+                width: 45%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .photo {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>My Gallery</h1>
+    <div class="gallery">
+        <div class="photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEJAzu5aTrvg0yPTkww7slPkkHuIjxHKsxRnF6YOnvsQ&s=10">
+            <div class="caption">Beautiful Nature</div>
+        </div>
+        <div class="photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhjlooQ3MRTzcRV73nKu_H2Y4jNYjJlnbi7UioyZjLQ&s=10" alt="Beach">
+            <div class="caption">Beautiful Beach</div>
+        </div>
+        <div class="photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVvbDwmdzgyFiX2rBSrNeUR6v4OgBaVK59a4-D6RGOeA&s=10" alt="Mountain">
+            <div class="caption">Mountain View</div>
+        </div>
+        <div class="photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4IAZY0-3Nz9UEckZM1OKehjzuTZ5aI286OuvO0bXnJw&s=10" alt="Lake">
+            <div class="caption">Beautiful Lake</div>
+        </div>
+        <div class="photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgti3porIejEDqdSWFDnkj10inZu4LraHlXl_FLpJxHg&s=10" alt="Landscape">
+            <div class="caption">Amazing Landscape</div>
+        </div>
+        <div class="photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJe2FHL0pdv82RwxM9WSMcNeM43qe7Xh_66XVCuMH-Bw&s=10" alt="Forest">
+            <div class="caption">Green Forest</div>
+        </div>
+    </div>
+</body>
+</html>
