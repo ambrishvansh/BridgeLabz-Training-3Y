@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo Classes</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .box {
+            background-color: white;
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Hover */
+        .hover-link:hover {
+            color: red;
+        }
+
+        /* Focus */
+        .focus-input:focus {
+            background-color: yellow;
+        }
+
+        /* Active */
+        .active-button:active {
+            background-color: green;
+            color: white;
+        }
+
+        /* nth-child */
+        .list li:nth-child(2) {
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Pseudo Classes</h1>
+
+    <div class="container">
+
+        <div class="box">
+            <h3>:hover</h3>
+
+            <a href="#" class="hover-link">
+                Move mouse here
+            </a>
+
+            <p>
+                Color changes when mouse is over the link.
+            </p>
+        </div>
+
+
+        <div class="box">
+            <h3>:focus</h3>
+
+            <input
+                class="focus-input"
+                type="text"
+                placeholder="Click here"
+            >
+
+            <p>
+                Background changes when input is selected.
+            </p>
+        </div>
+
+
+        <div class="box">
+            <h3>:active</h3>
+
+            <button class="active-button">
+                Click Me
+            </button>
+
+            <p>
+                Color changes while clicking the button.
+            </p>
+        </div>
+
+
+        <div class="box">
+            <h3>:nth-child()</h3>
+
+            <ul class="list">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+                <li>Orange</li>
+            </ul>
+
+            <p>
+                Second item has a different background.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
